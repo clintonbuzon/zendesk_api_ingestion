@@ -1,7 +1,21 @@
 # zendesk_api_ingestion
 Sample python script that will ingest all users from the Zendesk REST API into an AWS S3 bucket. Converts the JSON response to .csv file format.
 
-Parameters to edit:
+### Zendesktop Prerequisites
+
+Please ensure that your Zendesk API account's "Password access" is enabled. This allows the python script to login and authenticate via username/password. To check, go to your account Admin>Channels>Api then enable "Password Access"
+
+### Python Prerequisites
+
+    pip install requests
+    pip install boto3
+
+### AWS Prerequisites
+
++ Please create your access key and secret key
++ Please create aws bucket
+
+### Parameters to edit:
 
     ZENDESK_URL = '<insert your zendesk url here>'
     ZENDESK_USER = '<insert your zendesk user here>'
@@ -11,7 +25,7 @@ Parameters to edit:
     AWS_SECRET_KEY = '<insert your secret key here>'
     AWS_BUCKET = '<insert your aws bucket name here>'
 
-Sample parameters for reference:
+### Sample parameters for reference:
 
     ZENDESK_URL = 'https://clinton.zendesk.com/api/v2/users.json'
     ZENDESK_USER = 'clinton.buzon@gmail.com'
