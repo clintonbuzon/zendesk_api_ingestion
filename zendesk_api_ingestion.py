@@ -3,11 +3,11 @@
 # This allows the python script to login and authenticate via username/password
 # To check, go to your account Admin>Channels>Api then enable "Password Access"
 
-# Python Prerequisits
+# Python Prerequisites
 # pip install requests
 # pip install boto3
 
-# AWS Prerequisits
+# AWS Prerequisites
 # Please create your access key and secret key
 # Please create aws bucket
 
